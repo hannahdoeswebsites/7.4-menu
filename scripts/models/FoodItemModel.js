@@ -6,13 +6,10 @@ var MenuItemModel = Backbone.Model.extend({
   });
 
   var FoodCollection = Backbone.Collection.extend({
-
-  	model: FoodItem,
+    Model: MenuItemModel,
   	url: 'https://api.parse.com/1/classes/menu',
   	parse: function(response) {
   		return response.results;
   	}
 
   });
-
-  export default {FoodItem, FoodCollection};

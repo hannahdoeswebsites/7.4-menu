@@ -1,7 +1,7 @@
 
   import MenuTypes from './MenuTypeView';
 
-  export default Backbone.View.extend({
+var FoodListView = Backbone.View.extend({
 
   	template: JST['FoodListView'],
 
@@ -63,5 +63,3 @@
   	}
 
 });
-
-var foodListView = new FoodListView ({model: foodListModel});

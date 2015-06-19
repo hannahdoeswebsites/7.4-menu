@@ -1,10 +1,11 @@
 import MenuTypeView from './views/MenuTypeView';
 import OrderView from './views/OrderView';
-import FoodItemView from '.views/FoodItemView';
-import FoodListView from '.views/FoodListView';
-import {FoodItemModel} from './models/FoodItemView';
-import {FoodListModel} from './models/FoodListView';
-import {MenuTypeModel} from '/models/MenuTypeModel';
+import ajaxconfig from './ajax-config';
+import FoodItemView from './views/FoodItemView';
+import FoodListView from './views/FoodListView';
+import {FoodItemModel} from './models/FoodItemModel';
+import {FoodListModel} from './models/FoodListModel';
+import {MenuTypeModel} from './models/MenuTypeModel';
 import {OrderModel} from './models/OrderModel';
 
 
@@ -34,4 +35,5 @@ var Router = Backbone.Router.extend({
 });
 
 var router = new Router();
+
 export default router;

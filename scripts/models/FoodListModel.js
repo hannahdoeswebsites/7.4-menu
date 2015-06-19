@@ -1,7 +1,7 @@
 var FoodListModel = Backbone.Model.extend({
   idAttribute: 'objectId',
 
-  
+
 defaults: function(){
   return {
     itemName: '',

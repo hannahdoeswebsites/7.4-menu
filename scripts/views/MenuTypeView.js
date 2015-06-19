@@ -16,7 +16,7 @@ export default Backbone.View.extend({
     	this.type = options.type;
     	this.order = options.order;
     	this.render(options);
-    	// console.log('menuTypes', options.type, this.collection);
+    	console.log('menuTypes', options.type, this.collection);
   	},
 
   	render: function(options){
