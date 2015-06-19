@@ -1,14 +1,16 @@
 import {FoodListCollection} from './FoodListModel';
 
-export default Backbone.Model.extend({
+var Menu = Backbone.Model.extend({
   idAttribute: 'objectId',
 
   urlRoot: 'https://api.parse.com/1/classes/Orders',
 
 defaults: {
-  itemName: '',
-  itemDescription: '',
-  itemPrice: '',
+  Name: '',
+  Description: '',
+  Price: '',
+  Popularity: '',
+  Type: '',
 },
 
 //subtotal belongs here.
@@ -43,6 +45,13 @@ toJSON: function(){
   });
 },
 
+
+});
+
+
+var MenuCollection = Backbone.Collection.extend({
+  model: Menu,
+  url: 'https://api.parse.com/1/classes/Menu'
 
 });
 
